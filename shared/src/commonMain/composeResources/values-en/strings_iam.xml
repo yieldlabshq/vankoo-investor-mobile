@@ -1,0 +1,57 @@
+<resources>
+    <!-- Fields, shared by the four screens -->
+    <string name="iam_field_email">Email</string>
+    <string name="iam_field_password">Password</string>
+    <string name="iam_field_password_confirmation">Confirm password</string>
+    <string name="iam_field_password_show">Show password</string>
+    <string name="iam_field_password_hide">Hide password</string>
+
+    <!-- Sign in -->
+    <string name="sign_in_title">Welcome back</string>
+    <string name="sign_in_subtitle">Sign in to see your investment opportunities.</string>
+    <string name="sign_in_forgot_password">Forgot your password?</string>
+    <string name="sign_in_submit">Sign in</string>
+    <string name="sign_in_submitting">Signing in…</string>
+    <string name="sign_in_no_account">Don\'t have an account?</string>
+    <string name="sign_in_create_one">Create one</string>
+
+    <!-- Sign up -->
+    <string name="sign_up_title">Create your account</string>
+    <string name="sign_up_subtitle">Invest in invoices from Peruvian MYPEs.</string>
+    <string name="sign_up_password_hint">At least 8 characters.</string>
+    <string name="sign_up_password_mismatch">The passwords do not match.</string>
+    <string name="sign_up_accept_terms">I accept the Terms and the Privacy Policy.</string>
+    <string name="sign_up_submit">Create account</string>
+    <string name="sign_up_submitting">Creating account…</string>
+    <string name="sign_up_have_account">Already have an account?</string>
+    <string name="sign_up_sign_in_link">Sign in</string>
+
+    <!-- Password recovery -->
+    <string name="recover_back">Back to sign in</string>
+    <string name="recover_title">Recover your password</string>
+    <string name="recover_subtitle">Enter your email and we will send you a link to create a new one.</string>
+    <string name="recover_submit">Send link</string>
+    <string name="recover_submitting">Sending…</string>
+    <string name="recover_sent_title">Check your email</string>
+    <string name="recover_sent_body">If an account exists for %1$s, a link will arrive in a few minutes.</string>
+
+    <!-- Elegir contraseña nueva. Sin mockup: el set de IAM en Figma tiene cuatro pantallas. -->
+    <string name="reset_title">Choose a new password</string>
+    <string name="reset_subtitle">This is the password you will sign in with from now on.</string>
+    <string name="reset_submit">Save password</string>
+    <string name="reset_submitting">Saving…</string>
+    <string name="reset_missing_token">This link is incomplete: the code that identifies it is missing. Ask for a new one and try again.</string>
+    <string name="reset_ask_for_another">Ask for another link</string>
+
+    <!-- Errors. The key is the problem+json `code`, one for one. -->
+    <string name="iam_error_email_shape">Enter a valid email address.</string>
+    <string name="iam_error_email_already_in_use">An account with this email already exists.</string>
+    <string name="iam_error_invalid_credentials">Incorrect email or password.</string>
+    <string name="iam_error_invalid_password_reset_token">That link no longer works: it may have expired or already been used. Ask for a new one.</string>
+    <string name="iam_error_role_not_allowed">We could not create your account with that profile type.</string>
+    <string name="iam_error_validation_failed">Check the details: something is not right.</string>
+    <string name="iam_error_invalid_request">Check the details: something is not right.</string>
+    <string name="iam_error_user_not_found">We could not find an account with that email.</string>
+    <string name="iam_error_unauthenticated">Your session expired. Please sign in again.</string>
+    <string name="iam_error_forbidden">Your account is not allowed to do this.</string>
+</resources>

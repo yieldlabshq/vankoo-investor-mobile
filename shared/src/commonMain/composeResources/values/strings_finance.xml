@@ -1,0 +1,66 @@
+<resources>
+    <!-- Billetera -->
+    <string name="wallet_title">Billetera</string>
+    <string name="wallet_available_label">Disponible para invertir</string>
+    <string name="wallet_available_caption">listo para usar</string>
+    <string name="wallet_available_caption_empty">todavía sin saldo</string>
+    <string name="wallet_top_up">Recargar</string>
+    <string name="wallet_movements_title">Movimientos</string>
+    <string name="wallet_movements_more">Ver más movimientos</string>
+    <string name="wallet_retry">Reintentar</string>
+    <string name="wallet_empty_title">Recarga para empezar</string>
+    <string name="wallet_empty_body">Con saldo en la billetera puedes invertir en cualquier factura del mercado. El mínimo por factura es S/ 500.</string>
+
+    <!-- Tipos de movimiento, del contrato de Wallet -->
+    <string name="finance_movement_top_up">Recarga</string>
+    <string name="finance_movement_investment">Inversión</string>
+    <string name="finance_movement_withdrawal">Retiro</string>
+    <string name="finance_movement_commission">Comisión</string>
+    <string name="finance_movement_other">Movimiento</string>
+
+    <!-- Errores con code de Finance (problem+json) -->
+    <string name="finance_error_insufficient_balance">Tu saldo no alcanza para este monto.</string>
+
+    <!-- Recargar -->
+    <string name="top_up_title">¿Cuánto quieres recargar?</string>
+    <string name="top_up_title_short">Recargar</string>
+    <string name="top_up_current_balance">Saldo actual: %1$s</string>
+    <string name="top_up_stripe_note">El cobro lo procesa Stripe. Vankoo no guarda tu tarjeta.</string>
+    <string name="top_up_submit">Recargar</string>
+    <string name="top_up_submit_amount">Recargar %1$s</string>
+
+    <!-- Pago seguro (la espera mientras Stripe cobra) -->
+    <string name="top_up_pending_title">Pago seguro</string>
+    <string name="top_up_pending_label">Estás recargando</string>
+    <string name="top_up_pending_balance_label">Tu saldo ahora</string>
+    <string name="top_up_pending_preparing">Preparando tu pago seguro…</string>
+    <string name="top_up_pending_opening">Abriendo la página de pago…</string>
+    <string name="top_up_pending_unpaid_title">No completaste el pago</string>
+    <string name="top_up_pending_unpaid_body">No se te ha cobrado nada. Puedes volver a la página de pago cuando quieras.</string>
+    <string name="top_up_pending_resume">Volver al pago</string>
+    <string name="top_up_pending_confirming_title">Confirmando tu pago con Stripe…</string>
+    <string name="top_up_pending_confirming_body">Esto toma unos segundos. Tu saldo se actualizará solo.</string>
+    <string name="top_up_pending_trust">Pago procesado por Stripe. Vankoo no ve ni guarda tu tarjeta.</string>
+    <string name="top_up_pending_leave">Salir sin pagar</string>
+    <string name="top_up_pending_back_to_wallet">Volver a Billetera</string>
+    <string name="top_up_pending_no_browser">No encontramos un navegador para abrir la página de pago.</string>
+
+    <!-- No se pudo recargar -->
+    <string name="top_up_failed_title">No se pudo recargar</string>
+    <string name="top_up_failed_amount">Importe</string>
+    <string name="top_up_failed_date">Fecha</string>
+    <string name="top_up_failed_balance_unchanged">Tu saldo no cambió</string>
+    <string name="top_up_failed_retry">Probar otra vez</string>
+
+    <!-- Motivos, normalizados por Finance a cinco -->
+    <string name="finance_failure_declined_title">Tu banco rechazó el pago</string>
+    <string name="finance_failure_declined_body">Puede ser el límite de la tarjeta o una restricción del banco. Prueba con otra tarjeta o habla con ellos.</string>
+    <string name="finance_failure_expired_title">El pago caducó</string>
+    <string name="finance_failure_expired_body">Pasó demasiado tiempo sin completar el pago. Vuelve a intentarlo cuando quieras.</string>
+    <string name="finance_failure_invalid_method_title">La tarjeta no es válida</string>
+    <string name="finance_failure_invalid_method_body">Revisa los datos de la tarjeta o prueba con otra.</string>
+    <string name="finance_failure_provider_title">El procesador de pagos falló</string>
+    <string name="finance_failure_provider_body">No fue culpa tuya ni de tu banco. Inténtalo de nuevo en unos minutos.</string>
+    <string name="finance_failure_unknown_title">No pudimos completar el pago</string>
+    <string name="finance_failure_unknown_body">Tu saldo no cambió. Puedes intentarlo otra vez.</string>
+</resources>

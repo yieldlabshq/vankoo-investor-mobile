@@ -1,0 +1,99 @@
+<resources>
+    <!-- Mercado -->
+    <string name="market_title">Mercado</string>
+    <string name="market_filter_all">Todas</string>
+    <string name="market_filter_green">Verdes</string>
+    <string name="market_filter_closing_soon">Vencen pronto</string>
+    <string name="market_more">Ver más facturas</string>
+    <string name="market_retry">Reintentar</string>
+    <string name="market_empty_title">No hay facturas en subasta</string>
+    <string name="market_empty_body">Ahora mismo ninguna factura está buscando financiación. Te avisamos en cuanto entre una.</string>
+    <string name="market_empty_green_body">Ninguna factura verde está buscando financiación ahora mismo. Prueba a quitar el filtro.</string>
+    <string name="market_empty_clear_filter">Ver todas las facturas</string>
+
+    <!-- Tarjeta de subasta. «S/ 18,400 · 62 % fondeado» -->
+    <string name="auction_funding_summary">%1$s · %2$s % fondeado</string>
+    <!-- PENDIENTE DE DISEÑO: la TEA no está en los mockups. Ver auction_detail_yield_label. -->
+    <string name="auction_tea">%1$s % TEA</string>
+    <string name="auction_discount">%1$s % de descuento</string>
+    <string name="auction_discount_pending">descuento por fijar</string>
+    <string name="auction_green_stamp">Factura verde</string>
+
+    <!-- Grados de riesgo, uno por valor de ScoreGrade -->
+    <string name="risk_grade_a">Grado A</string>
+    <string name="risk_grade_b">Grado B</string>
+    <string name="risk_grade_c">Grado C</string>
+    <string name="risk_grade_under_evaluation">Sin evaluar</string>
+
+    <!-- Detalle de subasta -->
+    <string name="auction_detail_due_subtitle">vence el %1$s</string>
+    <string name="auction_detail_panel_caption">%1$s % fondeado · %2$s</string>
+    <string name="auction_detail_funded_caption">%1$s % fondeado</string>
+    <string name="auction_detail_remaining_label">Falta por fondear</string>
+    <string name="auction_detail_target_label">Objetivo de la subasta</string>
+    <string name="auction_detail_breakdown_title">Cómo se reparte</string>
+    <string name="auction_detail_invoice_amount">Importe de la factura</string>
+    <string name="auction_detail_discount_row">Descuento (%1$s %)</string>
+    <string name="auction_detail_mype_net">Neto para la MYPE</string>
+    <string name="auction_detail_platform_fee">Comisión Vankoo (%1$s %)</string>
+    <string name="auction_detail_breakdown_note">El descuento es tu ganancia: pones parte del objetivo y cobras la misma parte de la factura en la fecha de vencimiento.</string>
+    <string name="auction_detail_yield_label">Tu rendimiento esperado</string>
+    <!-- TEA y plazo cotizado: «12 % TEA · 61 días» -->
+    <string name="auction_detail_yield_value">%1$s % TEA · %2$s</string>
+    <string name="auction_detail_invoice_title">La factura</string>
+    <string name="auction_detail_payer_ruc">RUC del pagador</string>
+    <string name="auction_detail_due">Vence</string>
+    <string name="auction_detail_not_found_title">Esta subasta ya no está</string>
+    <string name="auction_detail_not_found_body">Puede que se haya fondeado del todo o que haya vencido. Mira qué más hay en el mercado.</string>
+    <string name="auction_detail_back_to_market">Volver al mercado</string>
+    <string name="auction_detail_invest">Invertir</string>
+
+    <!-- Estados de una subasta que ya no admite dinero -->
+    <string name="auction_status_fully_funded">Fondeada del todo</string>
+    <string name="auction_status_expired">Vencida</string>
+    <string name="auction_status_closed">Cerrada</string>
+    <string name="auction_status_cancelled">Cancelada</string>
+
+    <plurals name="auction_term_days">
+        <item quantity="one">%1$d día</item>
+        <item quantity="other">%1$d días</item>
+    </plurals>
+    <plurals name="auction_days_to_maturity">
+        <item quantity="one">vence en %1$d día</item>
+        <item quantity="other">vence en %1$d días</item>
+    </plurals>
+    <plurals name="auction_days_to_close">
+        <item quantity="one">cierra en %1$d día</item>
+        <item quantity="other">cierra en %1$d días</item>
+    </plurals>
+    <string name="auction_closes_today">cierra hoy</string>
+    <!-- Confirmar inversión -->
+    <string name="confirm_title">¿Cuánto quieres invertir?</string>
+    <string name="confirm_amount_label">Importe</string>
+    <string name="confirm_available">Disponible: %1$s</string>
+    <string name="confirm_minimum">Mínimo %1$s</string>
+    <string name="confirm_shortfall">Te faltan %1$s</string>
+    <string name="confirm_below_minimum">El mínimo por factura es %1$s</string>
+    <string name="confirm_above_auction">A esta subasta solo le falta %1$s</string>
+    <string name="confirm_participation">Tu participación</string>
+    <string name="confirm_participation_value">%1$s % de la subasta</string>
+    <string name="confirm_expected_return">Devolución esperada</string>
+    <string name="confirm_collect_on">La cobras</string>
+    <string name="confirm_collect_on_value">el %1$s</string>
+    <string name="confirm_submit">Confirmar inversión</string>
+    <string name="confirm_top_up">Recargar la billetera</string>
+    <string name="confirm_use_affordable">Invertir %1$s en su lugar</string>
+    <string name="confirm_closed">Esta subasta ya no admite inversiones.</string>
+
+    <!-- Errores al confirmar: el débito de la billetera y lo que pasa si la inversión no entra -->
+    <string name="investment_error_insufficient_balance">Tu saldo ya no alcanza para este monto. Recarga o invierte menos.</string>
+    <string name="investment_error_debited_not_invested">Tu saldo bajó, pero la inversión no quedó registrada. Vuelve a intentar con este mismo monto; si el problema sigue, escríbenos.</string>
+
+    <!-- Confirmar · Hecho -->
+    <string name="confirm_done_title">Listo, ya inviertes</string>
+    <string name="confirm_done_amount_label">Invertiste</string>
+    <string name="confirm_done_collect">La cobras</string>
+    <string name="confirm_done_collect_value">cuando el pagador pague</string>
+    <string name="confirm_done_expected_date">Fecha prevista</string>
+    <string name="confirm_done_back">Volver al mercado</string>
+</resources>
