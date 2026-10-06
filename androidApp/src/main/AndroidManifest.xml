@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+      Desde Android 11 la app solo ve los paquetes que declara aquí. Sin esto,
+      CustomTabsClient.getPackageName devuelve null aunque Chrome esté instalado, y
+      el Checkout de Stripe se abriría en el navegador aparte en vez de como hoja
+      dentro de la app.
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".VankooApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <!--
+          singleTask y no singleTop: la hoja de Stripe (Custom Tab) vive en nuestra
+          misma tarea, encima de esta actividad. Cuando Stripe redirige a vankoo://,
+          singleTop crearía OTRA copia de MainActivity encima de la hoja, porque la
+          actividad ya no está en la cima. singleTask reutiliza la que existe, cierra
+          lo que tenga encima (la hoja) y entrega el enlace por onNewIntent.
+        -->
+        <activity
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--
+              El enlace del correo de recuperación. Esquema propio y no https porque un
+              enlace https solo abre la app cuando el sitio sirve el assetlinks.json
+              desde un dominio nuestro, y todavía no hay dominio.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="vankoo" android:host="reset-password" />
+            </intent-filter>
+
+            <!--
+              A dónde vuelve Stripe al terminar o abandonar el Checkout de una recarga
+              (STRIPE_SUCCESS_URL / STRIPE_CANCEL_URL de Finance): vankoo://deposits/success
+              y vankoo://deposits/cancel. No navega a ninguna pantalla — la de espera ya
+              está debajo — pero VankooAppHost lee el último tramo del path y se lo pasa
+              a esa pantalla para que distinga «pagaste, confirmando» de «volviste sin
+              pagar». El estado final sigue llegando por el polling al depósito.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="vankoo" android:host="deposits" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
