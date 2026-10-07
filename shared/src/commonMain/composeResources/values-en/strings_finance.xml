@@ -1,0 +1,66 @@
+<resources>
+    <!-- Wallet -->
+    <string name="wallet_title">Wallet</string>
+    <string name="wallet_available_label">Available to invest</string>
+    <string name="wallet_available_caption">ready to use</string>
+    <string name="wallet_available_caption_empty">no balance yet</string>
+    <string name="wallet_top_up">Top up</string>
+    <string name="wallet_movements_title">Activity</string>
+    <string name="wallet_movements_more">See more activity</string>
+    <string name="wallet_retry">Try again</string>
+    <string name="wallet_empty_title">Top up to get started</string>
+    <string name="wallet_empty_body">With a balance in your wallet you can invest in any invoice on the market. The minimum per invoice is S/ 500.</string>
+
+    <!-- Movement kinds, from the Wallet contract -->
+    <string name="finance_movement_top_up">Top-up</string>
+    <string name="finance_movement_investment">Investment</string>
+    <string name="finance_movement_withdrawal">Withdrawal</string>
+    <string name="finance_movement_commission">Fee</string>
+    <string name="finance_movement_other">Movement</string>
+
+    <!-- Coded Finance errors (problem+json) -->
+    <string name="finance_error_insufficient_balance">Your balance does not cover this amount.</string>
+
+    <!-- Top up -->
+    <string name="top_up_title">How much do you want to add?</string>
+    <string name="top_up_title_short">Top up</string>
+    <string name="top_up_current_balance">Current balance: %1$s</string>
+    <string name="top_up_stripe_note">Stripe processes the charge. Vankoo does not store your card.</string>
+    <string name="top_up_submit">Top up</string>
+    <string name="top_up_submit_amount">Top up %1$s</string>
+
+    <!-- Secure payment (the wait while Stripe charges) -->
+    <string name="top_up_pending_title">Secure payment</string>
+    <string name="top_up_pending_label">You are adding</string>
+    <string name="top_up_pending_balance_label">Your balance now</string>
+    <string name="top_up_pending_preparing">Preparing your secure payment…</string>
+    <string name="top_up_pending_opening">Opening the payment page…</string>
+    <string name="top_up_pending_unpaid_title">You did not complete the payment</string>
+    <string name="top_up_pending_unpaid_body">Nothing has been charged. You can go back to the payment page whenever you like.</string>
+    <string name="top_up_pending_resume">Back to payment</string>
+    <string name="top_up_pending_confirming_title">Confirming your payment with Stripe…</string>
+    <string name="top_up_pending_confirming_body">This takes a few seconds. Your balance will update on its own.</string>
+    <string name="top_up_pending_trust">Payment processed by Stripe. Vankoo never sees or stores your card.</string>
+    <string name="top_up_pending_leave">Leave without paying</string>
+    <string name="top_up_pending_back_to_wallet">Back to Wallet</string>
+    <string name="top_up_pending_no_browser">We could not find a browser to open the payment page.</string>
+
+    <!-- Top-up failed -->
+    <string name="top_up_failed_title">The top-up did not go through</string>
+    <string name="top_up_failed_amount">Amount</string>
+    <string name="top_up_failed_date">Date</string>
+    <string name="top_up_failed_balance_unchanged">Your balance did not change</string>
+    <string name="top_up_failed_retry">Try again</string>
+
+    <!-- Reasons, normalised by Finance to five -->
+    <string name="finance_failure_declined_title">Your bank declined the payment</string>
+    <string name="finance_failure_declined_body">It may be the card’s limit or a restriction from the bank. Try another card or talk to them.</string>
+    <string name="finance_failure_expired_title">The payment expired</string>
+    <string name="finance_failure_expired_body">Too much time passed without completing the payment. Try again whenever you like.</string>
+    <string name="finance_failure_invalid_method_title">The card is not valid</string>
+    <string name="finance_failure_invalid_method_body">Check the card details or try another one.</string>
+    <string name="finance_failure_provider_title">The payment processor failed</string>
+    <string name="finance_failure_provider_body">It was not you or your bank. Try again in a few minutes.</string>
+    <string name="finance_failure_unknown_title">We could not complete the payment</string>
+    <string name="finance_failure_unknown_body">Your balance did not change. You can try again.</string>
+</resources>

@@ -1,0 +1,100 @@
+<resources>
+    <!-- Market -->
+    <string name="market_title">Market</string>
+    <string name="market_filter_all">All</string>
+    <string name="market_filter_green">Green</string>
+    <string name="market_filter_closing_soon">Closing soon</string>
+    <string name="market_more">See more invoices</string>
+    <string name="market_retry">Try again</string>
+    <string name="market_empty_title">No invoices up for funding</string>
+    <string name="market_empty_body">No invoice is looking for funding right now. We will let you know as soon as one arrives.</string>
+    <string name="market_empty_green_body">No green invoice is looking for funding right now. Try clearing the filter.</string>
+    <string name="market_empty_clear_filter">See every invoice</string>
+
+    <!-- Auction card. "S/ 18,400 · 62 % funded" -->
+    <string name="auction_funding_summary">%1$s · %2$s % funded</string>
+    <!-- PENDING DESIGN: the TEA is not in the mockups. See auction_detail_yield_label. -->
+    <string name="auction_tea">%1$s % APY</string>
+    <string name="auction_discount">%1$s % discount</string>
+    <string name="auction_discount_pending">discount not set yet</string>
+    <string name="auction_green_stamp">Green invoice</string>
+
+    <!-- Risk grades, one per ScoreGrade value -->
+    <string name="risk_grade_a">Grade A</string>
+    <string name="risk_grade_b">Grade B</string>
+    <string name="risk_grade_c">Grade C</string>
+    <string name="risk_grade_under_evaluation">Not graded</string>
+
+    <!-- Auction detail -->
+    <string name="auction_detail_due_subtitle">due %1$s</string>
+    <string name="auction_detail_panel_caption">%1$s % funded · %2$s</string>
+    <string name="auction_detail_funded_caption">%1$s % funded</string>
+    <string name="auction_detail_remaining_label">Still to fund</string>
+    <string name="auction_detail_target_label">Funding target</string>
+    <string name="auction_detail_breakdown_title">How it splits</string>
+    <string name="auction_detail_invoice_amount">Invoice amount</string>
+    <string name="auction_detail_discount_row">Discount (%1$s %)</string>
+    <string name="auction_detail_mype_net">Net to the MYPE</string>
+    <string name="auction_detail_platform_fee">Vankoo fee (%1$s %)</string>
+    <string name="auction_detail_breakdown_note">The discount is your profit: you put in part of the target and collect the same part of the invoice on the due date.</string>
+    <string name="auction_detail_yield_label">Your expected return</string>
+    <!-- APY and quoted term: "12 % APY · 61 days" -->
+    <string name="auction_detail_yield_value">%1$s % APY · %2$s</string>
+    <string name="auction_detail_invoice_title">The invoice</string>
+    <string name="auction_detail_payer_ruc">Payer RUC</string>
+    <string name="auction_detail_due">Due</string>
+    <string name="auction_detail_not_found_title">This auction is gone</string>
+    <string name="auction_detail_not_found_body">It may have been fully funded, or it may have expired. See what else is on the market.</string>
+    <string name="auction_detail_back_to_market">Back to the market</string>
+    <string name="auction_detail_invest">Invest</string>
+
+    <!-- States in which an auction takes no more money -->
+    <string name="auction_status_fully_funded">Fully funded</string>
+    <string name="auction_status_expired">Expired</string>
+    <string name="auction_status_closed">Closed</string>
+    <string name="auction_status_cancelled">Cancelled</string>
+
+    <plurals name="auction_term_days">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <plurals name="auction_days_to_maturity">
+        <item quantity="one">due in %1$d day</item>
+        <item quantity="other">due in %1$d days</item>
+    </plurals>
+    <plurals name="auction_days_to_close">
+        <item quantity="one">closes in %1$d day</item>
+        <item quantity="other">closes in %1$d days</item>
+    </plurals>
+    <string name="auction_closes_today">closes today</string>
+    <!-- Confirm investment -->
+    <string name="confirm_title">How much do you want to invest?</string>
+    <string name="confirm_amount_label">Amount</string>
+    <string name="confirm_available">Available: %1$s</string>
+    <string name="confirm_minimum">Minimum %1$s</string>
+    <string name="confirm_shortfall">You are %1$s short</string>
+    <string name="confirm_below_minimum">The minimum per invoice is %1$s</string>
+    <string name="confirm_above_auction">This auction only needs %1$s more</string>
+    <string name="confirm_participation">Your share</string>
+    <string name="confirm_participation_value">%1$s % of the auction</string>
+    <string name="confirm_expected_return">Expected return</string>
+    <string name="confirm_collect_on">You collect</string>
+    <string name="confirm_collect_on_value">on %1$s</string>
+    <string name="confirm_submit">Confirm investment</string>
+    <string name="confirm_top_up">Top up the wallet</string>
+    <string name="confirm_use_affordable">Invest %1$s instead</string>
+    <!-- While Investment does not debit the wallet on an investment. -->
+    <string name="confirm_closed">This auction takes no more investment.</string>
+
+    <!-- Errors on confirm: the wallet debit, and what happens if the investment does not go through -->
+    <string name="investment_error_insufficient_balance">Your balance no longer covers this amount. Top up or invest less.</string>
+    <string name="investment_error_debited_not_invested">Your balance went down, but the investment was not recorded. Try again with this same amount; if it keeps failing, contact us.</string>
+
+    <!-- Confirm · Done -->
+    <string name="confirm_done_title">Done, you are invested</string>
+    <string name="confirm_done_amount_label">You invested</string>
+    <string name="confirm_done_collect">You collect</string>
+    <string name="confirm_done_collect_value">when the payer pays</string>
+    <string name="confirm_done_expected_date">Expected date</string>
+    <string name="confirm_done_back">Back to the market</string>
+</resources>

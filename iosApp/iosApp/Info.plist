@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<!--
+	  Declara vankoo:// para que iOS entregue a esta app el enlace del correo de
+	  recuperación, igual que hace el intent-filter en Android.
+
+	  PENDIENTE: declararlo no basta. Falta el onOpenURL en iOSApp.swift y pasarle la
+	  URL al NavHostController, que en iOS no tiene el equivalente de onNewIntent. Se
+	  deja sin escribir en vez de a medias: nada de esto se puede probar hasta que el
+	  proyecto de Xcode se compile aquí, que hoy tampoco pasa por ATS.
+	-->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.liquilabs.vankoo.investor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>vankoo</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

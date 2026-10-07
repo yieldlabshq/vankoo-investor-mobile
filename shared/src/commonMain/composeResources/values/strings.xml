@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Vankoo</string>
+    <string name="app_tagline">Tu liquidez, hoy.</string>
+    <string name="common_back">Volver</string>
+    <string name="error_network">No pudimos conectar con Vankoo. Inténtalo en unos minutos.</string>
+    <string name="error_server">El servidor no respondió como esperábamos.</string>
+    <string name="error_unexpected">Algo salió mal. Inténtalo de nuevo.</string>
+    <string name="home_signed_in_as">Sesión iniciada como</string>
+    <string name="home_sign_out">Cerrar sesión</string>
+
+    <!-- Barra de pestañas -->
+    <string name="tab_home">Inicio</string>
+    <string name="tab_market">Mercado</string>
+    <string name="tab_wallet">Billetera</string>
+    <string name="tab_profile">Perfil</string>
+
+    <!-- Secciones aún sin pantalla. Provisional: nadie diseñó este texto. -->
+    <string name="profile_title">Mi perfil</string>
+    <string name="placeholder_title">Todavía en construcción</string>
+    <string name="placeholder_body">Esta sección llegará en una próxima versión de la app.</string>
+
+    <!-- Fechas -->
+    <string-array name="month_short">
+        <item>ene</item>
+        <item>feb</item>
+        <item>mar</item>
+        <item>abr</item>
+        <item>may</item>
+        <item>jun</item>
+        <item>jul</item>
+        <item>ago</item>
+        <item>sep</item>
+        <item>oct</item>
+        <item>nov</item>
+        <item>dic</item>
+    </string-array>
+    <string-array name="month_long">
+        <item>enero</item>
+        <item>febrero</item>
+        <item>marzo</item>
+        <item>abril</item>
+        <item>mayo</item>
+        <item>junio</item>
+        <item>julio</item>
+        <item>agosto</item>
+        <item>septiembre</item>
+        <item>octubre</item>
+        <item>noviembre</item>
+        <item>diciembre</item>
+    </string-array>
+    <!-- día, mes, año, hora -->
+    <string name="date_long_format">%1$s de %2$s de %3$s, %4$s</string>
+    <!-- día, mes, año -->
+    <string name="date_long_date_format">%1$s de %2$s de %3$s</string>
+</resources>
